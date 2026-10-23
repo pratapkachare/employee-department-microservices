@@ -1,4 +1,7 @@
 package com.oneenterprise.department.dto;
+
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
-public record DepartmentRequest(@NotBlank @Size(max=100) String name, @Size(max=500) String description) {}
+
+public record DepartmentRequest(@NotBlank @Size(max = 100) String name, @Size(max = 500) String description) {
+}
